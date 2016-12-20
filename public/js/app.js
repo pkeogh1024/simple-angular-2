@@ -47,9 +47,15 @@ app.controller('MyApp.HomeController', [
         $scope.name = 'Bob';
         $scope.age = 32;
 
+        $scope.nameList = ['susan', 'jane', 'larry', 'joe', 'frank'];
+
         $scope.increaseAge = function() {
             console.log ('Increasing the age.');
             $scope.age = $scope.age+1;
+        }
+        $scope.addListItem = function() {
+            console.log ('Add List Item');
+            $scope.nameList.push ('Bob');
         }
 
 
